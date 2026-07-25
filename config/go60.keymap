@@ -346,7 +346,7 @@
             bindings   = <&kp BSPC >, <&kp LA(BSPC)>;
 keep-mods = <(MOD_RGUI|MOD_LGUI)>;
 
-  
+
       };
         ctrl_delete_hold_tap: ctrl_delete_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -456,8 +456,8 @@ keep-mods = <(MOD_RGUI|MOD_LSFT)>;
            &gresc_two  &kp N1                      &kp N2     &kp N3                &kp N4  &kp N5                                                                                                                                        &kp N6                 &kp N7     &kp N8     &kp N9    &kp N0       &kp MINUS
               &kp TAB   &kp Q                       &kp W      &kp E                 &kp R   &kp T                                                                                                                                         &kp Y                  &kp U   &i_arrow      &kp O     &kp P        &kp BSLH
              &kp CAPS   &kp A                       &kp S      &kp D                 &kp F   &kp G                                                                                                                                         &kp H               &j_arrow   &k_arrow   &l_arrow  &kp SEMI         &kp SQT
- &magic LAYER_Magic 0   &kp Z                       &kp X      &kp C                 &kp V   &kp B                                                                                                                                         &kp N                  &kp M  &kp COMMA    &kp DOT  &kp FSLH  &td_LAYER_Left
-                               &kp LG(LA(LCTRL))   &lm_right  &mod_click LALT LCLK                                                                                                                                                        &mod_click RCTRL RCLK   &lm_left  &kp GRAVE
+ &magic LAYER_Magic 0   &kp Z                       &kp X      &kp C                 &kp V   &kp B                                                                                                                                         &kp N                  &kp M  &kp COMMA    &kp DOT  &kp FSLH  &kp GLOBE
+                               &kp LS(LG(LA(LCTRL)))   &lm_right  &mod_click LALT LCLK                                                                                                                                                        &mod_click RCTRL RCLK   &lm_left  &kp GRAVE
                                                                                                     &mt_type LGUI SPACE  &ctrl_delete_hold_tap  LSHFT 0  &lt LAYER_Right LS(N9)  &lt LAYER_Left LBKT  &mt RSHFT RET  &mt_type RGUI SPACE
             >;
         };
