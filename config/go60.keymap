@@ -338,6 +338,20 @@
             keep-mods  = <(MOD_LALT|MOD_LGUI)>;
             bindings   = <&kp I>, <&kp UP>;
         };
+        y_bracket: behavior-mod-morph-y {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods       = <(MOD_LGUI)>;
+            keep-mods  = <(MOD_LGUI)>;
+            bindings   = <&kp Y>, <&kp LBKT>;
+        };
+        u_bracket: behavior-mod-morph-u {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods       = <(MOD_LGUI)>;
+            keep-mods  = <(MOD_LGUI)>;
+            bindings   = <&kp U>, <&kp RBKT>;
+        };
 
         ctrl_delete: ctrl_delete {
             compatible = "zmk,behavior-mod-morph";
@@ -454,7 +468,7 @@ keep-mods = <(MOD_RGUI|MOD_LSFT)>;
         layer_Base {
             bindings = <
            &gresc_two  &kp N1                      &kp N2     &kp N3                &kp N4  &kp N5                                                                                                                                        &kp N6                 &kp N7     &kp N8     &kp N9    &kp N0       &kp MINUS
-              &kp TAB   &kp Q                       &kp W      &kp E                 &kp R   &kp T                                                                                                                                         &kp Y                  &kp U   &i_arrow      &kp O     &kp P        &kp BSLH
+              &kp TAB   &kp Q                       &kp W      &kp E                 &kp R   &kp T                                                                                                                                         &y_bracket             &u_bracket   &i_arrow      &kp O     &kp P        &kp BSLH
              &kp LG(LA(LCTRL))   &kp A                       &kp S      &kp D                 &kp F   &kp G                                                                                                                                         &kp H               &j_arrow   &k_arrow   &l_arrow  &kp SEMI         &kp SQT
  &magic LAYER_Magic 0   &kp Z                       &kp X      &kp C                 &kp V   &kp B                                                                                                                                         &kp N                  &kp M  &kp COMMA    &kp DOT  &kp FSLH  &kp CAPS
                                &kp LS(LG(LA(LCTRL)))   &lm_right  &mod_click LALT LCLK                                                                                                                                                        &mod_click RCTRL RCLK   &lm_left  &kp GRAVE
